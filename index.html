@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>Aaron's Attire</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">   <link rel="stylesheet" href="style.css">
+   <script src="scripts/jquery-3.3.1.js" defer></script>
+   <script src="scripts/app.js" charset="utf-8" defer></script>
+</head>
+<body>
+   <header>
+      <div id="topBar">
+      </div>
+      <h2>Aaron's Attire</h2>
+      <nav>
+         <a href="">New Arrivals</a>
+         <a href="">Men</a>
+         <a href="">Women</a>
+         <a href="">Kids</a>
+         <a href="">Beauty</a>
+         <a href="">Shoes</a>
+         <a href="">Accessories</a>
+         <a href="" id="saleNav">Sale</a>
+      </nav>
+   </header>
+   <main>
+      <article>
+         <img src="img/blackdress.jpg" id="blackdress"class="" alt="">
+         <img src="img/whitedress.jpg" id="whitedress"class="hidden" alt="">
+         <img src="img/bluedress.jpg" id="bluedress"class="hidden" alt="">
+         <img src="img/reddress.jpg" id="reddress"class="hidden" alt="">
+      </article>
+      <aside>
+         <h3>Random Dress</h3>
+         <h4>$59.90</h4>
+         <p><strong>Color: &nbsp;</strong><span class="colorSelection">Please select</span></p>
+         <section>
+            <div class="choices colorChoices" id="choiceBlack"></div>
+            <div class="choices colorChoices" id="choiceBlue"></div>
+            <div class="choices colorChoices" id="choiceWhite"></div>
+            <div class="choices colorChoices" id="choiceRed"></div>
+         </section>
+         <hr>
+         <p><strong>Size: &nbsp;</strong><span class="sizeSelection">Please select</span></p>
+         <section>
+            <div class="choices sizeChoices" id="choiceS"><div class="choiceText">S</div></div>
+            <div class="choices sizeChoices" id="choiceM"><div class="choiceText">M</div></div>
+            <div class="choices sizeChoices" id="choiceL"><div class="choiceText">L</div></div>
+            <div class="choices sizeChoices" id="choiceXL"><div class="choiceText">XL</div></div>
+         </section>
+         <p><strong>Quantity: &nbsp;</strong><span class="quantitySelection">Please select</span></p>
+         <section>
+            <div class="choices quantityChoices" id="choice1"><div class="choiceText">1</div></div>
+            <div class="choices quantityChoices" id="choice2"><div class="choiceText">2</div></div>
+            <div class="choices quantityChoices" id="choice3"><div class="choiceText">3</div></div>
+            <div class="choices quantityChoices" id="choice4"><div class="choiceText">4</div></div>
+            <div class="choices quantityChoices" id="choice5"><div class="choiceText">5</div></div>
+         </section>
+         <hr>
+         <button id="shipping"><span id="edit">Enter</span> Shipping Information</button>
+         <form class="hidden" action="index.html" method="post">
+            <input name="name" placeholder="Name">
+            <input name="address1" placeholder="Address Line 1">
+            <input name="address2" placeholder="Address Line 2">
+            <input name="city" placeholder="City">
+            <input name="state" placeholder="State">
+            <input name="zipcode" placeholder="Zip Code">
+            <button id="checkout" type="submit">Check Out</button>
+         </form>
+         <section id="summary" class="hidden">
+            <h3>Shipment Summary:</h3>
+            <p>Your order contains <strong><span class="quantitySelection"></span> <span class="colorSelection"></span></strong> dress<span id="multiple"></span> in size <strong><span class="sizeSelection"></span></strong>.</p>
+            <p>Your pre-tax total is <strong><span id="totalPrice"></span></strong>.</p>
+         </section>
+      </aside>
+   </main>
+</body>
+</html>

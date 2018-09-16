@@ -1,0 +1,151 @@
+:root {
+  --main-font-color: #333131;
+  --trim: #d13839;
+}
+
+body {
+  color: var(--main-font-color);
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#topBar {
+  height: 70px;
+  background-color: var(--trim);
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--main-font-color);
+  display: inline-block;
+  margin-right: 3em;
+}
+
+#saleNav {
+  font-weight: 700;
+  color: var(--trim);
+}
+
+main {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+}
+
+article {
+  flex-basis: 65%;
+  margin-right: 25px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+aside {
+  flex-basis: 35%;
+}
+
+hr {
+  border: 0.5px solid var(--main-font-color);
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.choices {
+  border: 2px solid var(--main-font-color);
+  height: 50px;
+  width: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.choiceText {
+  margin-top: 15px;
+}
+
+.choices:hover {
+  cursor: pointer;
+}
+
+#choiceBlack {
+  background-color: #1f1a1c;
+}
+
+#choiceBlue {
+  background-color: #173481;
+}
+
+#choiceWhite {
+  background-color: f9f5f5;
+}
+
+#choiceRed {
+  background-color: #d42d24;
+}
+
+button {
+  height: 40px;
+  width: 250px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: var(--trim);
+  border: none;
+}
+
+input {
+  border: 1px solid var(--main-font-color);
+  height: 40px;
+  padding-left: 3px;
+  margin-top: 8px;
+  width: 250px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: var(--main-font-color);
+}
+
+#checkout {
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#checkout {
+  display: block;
+}
+
+.selected {
+  border: 2px solid var(--trim);
+  color: var(--trim);
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
